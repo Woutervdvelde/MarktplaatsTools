@@ -1,4 +1,4 @@
-<p align="center"><img src="/images/banner.png" width="128"></p>
+<p align="center"><img src="/images/banner.png" width="1440"></p>
 
 <p align="center">
     <img src="https://img.shields.io/github/license/Woutervdvelde/MarktplaatsTools.svg" alt="License">
