@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="popup.css">
-  </head>
-  <body>
-    <button id="changeColor"></button>
-    <script src="popup.js"></script>
-  </body>
+
+<head>
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="banner">
+      <img src="/images/icon_128.png" />
+    </div>
+    <div class="settingsContainer">
+      <p>Verwijder 'Bezoek website' advertenties</p>
+      <div>
+        <label class="switch">
+          <input id="remove_website_ads" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
 </html>

@@ -1,6 +1,9 @@
-const defaultValues = {
-  color: "A4A4A",
+const settings = {
+  remove_website_ads: false,
 }
+
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.storage.sync.set({ color: defaultValues.color });
+  chrome.storage.sync.set({ settings });
+  console.log(`set settings: `)
+  console.log(settings);
 });
