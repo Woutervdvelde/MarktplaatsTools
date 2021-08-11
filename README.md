@@ -1,7 +1,7 @@
 <p align="center"><img src="/images/banner.png" width="1440"></p>
 
 <p align="center">
-    <img src="https://img.shields.io/github/license/Woutervdvelde/MarktplaatsTools.svg" alt="License">
+    <img src="https://img.shields.io/github/license/WoutervdVelde/MarktplaatsTools" alt="License">
     <img src="https://img.shields.io/badge/maintained-yes-green.svg" alt="Maintained">
     <img src="https://img.shields.io/github/downloads/Woutervdvelde/MarktplaatsTools/total" alt="Total downloads">
     <img src="https://img.shields.io/github/v/release/Woutervdvelde/MarktplaatsTools" alt="Latest release">
