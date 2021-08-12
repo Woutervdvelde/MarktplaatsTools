@@ -6,19 +6,36 @@
 </head>
 
 <body>
+  <div class="banner">
+    <img src="/images/icon_128.png" />
+  </div>
   <div class="container">
-    <div class="banner">
-      <img src="/images/icon_128.png" />
-    </div>
     <div class="settingsContainer">
-      <p>Verwijder 'Bezoek website' advertenties</p>
-      <div>
-        <label class="switch">
-          <input id="remove_website_ads" type="checkbox">
-          <span class="slider round"></span>
-        </label>
+      <div class="settingContainer">
+        <div class="settingText">
+          <p>Verwijder 'Bezoek website' advertenties</p>
+        </div>
+        <div class="settingSlider">
+          <label class="switch">
+            <input id="remove_website_ads" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
       </div>
+      <div class="settingContainer">
+        <div class="settingText">
+          <p>Voeg 'snelle weergave' knop toe</p>
+        </div>
+        <div class="settingSlider">
+          <label class="switch">
+            <input id="quick_preview" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
     </div>
+  </div>
+  <div id="refresh_container">
+    <button id="refresh_button">Pagina opnieuw laden</button>
   </div>
 
   <script src="popup.js"></script>

@@ -8,6 +8,8 @@ chrome.storage.sync.get((values) => {
 const initialize = () => {
     if (settings.remove_website_ads)
         addDOMObserver();
+    if (settings.quick_preview)
+        addPreviewButton();
 }
 
 const removeElementsWithSite = () => {
@@ -30,4 +32,8 @@ const addDOMObserver = () => {
     
     const observer = new MutationObserver(callback);
     observer.observe(targetNode, config);
+}
+
+const addPreviewButton = () => {
+
 }

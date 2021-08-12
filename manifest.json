@@ -12,6 +12,9 @@
         "*://www.marktplaats.nl/q/*",
         "*://marktplaats.nl/q/*"
       ],
+      "css": [
+        "styles/inject.css"
+      ],
       "js": [
         "main.js"
       ]
