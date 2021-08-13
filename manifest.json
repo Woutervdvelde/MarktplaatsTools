@@ -21,9 +21,10 @@
     }
   ],
   "permissions": [
-    "storage",
     "activeTab",
-    "scripting"
+    "contextMenus",
+    "scripting",
+    "storage"
   ],
   "action": {
     "default_popup": "popup.html",
