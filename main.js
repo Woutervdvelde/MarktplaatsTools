@@ -6,8 +6,12 @@ chrome.storage.sync.get((values) => {
 });
 
 const initialize = () => {
+    addDOMObserver();
+}
+
+const DOMchanged = () => {
     if (settings.remove_website_ads)
-        addDOMObserver();
+        removeElementsWithSite();
     if (settings.quick_preview)
         addPreviewButton();
 }
@@ -26,7 +30,7 @@ const addDOMObserver = () => {
     const callback = function (mutationsList, observer) {
         mutationsList.forEach(mutation => {
             if (mutation.type === 'childList' && mutation.addedNodes.length)
-                removeElementsWithSite();
+                DOMchanged();
         });
     };
     
@@ -35,5 +39,8 @@ const addDOMObserver = () => {
 }
 
 const addPreviewButton = () => {
-    
+    document.querySelectorAll(".mp-Listing--sellerInfo").forEach(e => {
+        if (!e.querySelector(".mt-quick-preview-button"))
+            e.insertAdjacentHTML('beforeend', `<button class="mt-quick-preview-button">Snelle weergave</button>`)
+    });
 }
