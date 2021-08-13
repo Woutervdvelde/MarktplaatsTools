@@ -1,4 +1,20 @@
+:root {
+    --bg-light: hsl(0, 0%, 100%);
+    --bg-dark: hsl(40, 8%, 93%);
+    --accent-dark: hsl(213, 27%, 24%);
+    --accent-light: hsl(28, 79%, 66%);
+}
+
 .mt-quick-preview-button {
     position: absolute;
     bottom: 8px;
+    right: 8px;
+    padding: .5rem 1rem;
+    border: 1px solid var(--accent-light);
+    color: var(--accent-dark);
+    background-color: var(--bg-light);
+}
+
+.mt-quick-preview-button:hover {
+    background-color: var(--bg-dark);
 }

@@ -40,7 +40,9 @@ const addDOMObserver = () => {
 
 const addPreviewButton = () => {
     document.querySelectorAll(".mp-Listing--sellerInfo").forEach(e => {
-        if (!e.querySelector(".mt-quick-preview-button"))
-            e.insertAdjacentHTML('beforeend', `<button class="mt-quick-preview-button">Snelle weergave</button>`)
+        if (!e.querySelector(".mt-quick-preview-button")) {
+            const url = e.closest(".mp-Listing").querySelector(".mp-Listing-coverLink").getAttribute("href");
+            e.insertAdjacentHTML('beforeend', `<button class="mt-quick-preview-button">Snelle weergave</button>`);
+        }
     });
 }

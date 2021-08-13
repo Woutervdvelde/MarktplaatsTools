@@ -30,6 +30,12 @@ body {
 .banner {
     display: flex;
     justify-content: center;
+    max-width: 300px;
+}
+
+.banner > img {
+  max-width: 300px;
+  object-fit: contain;
 }
 
 .settingsContainer {
