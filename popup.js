@@ -39,5 +39,8 @@ quick_preview.addEventListener("change", () => {
 
 const saveChanges = () => {
   chrome.storage.sync.set({ settings });
-  refresh_container.style.opacity = "1";
+  chrome.tabs.query({ currentWindow: true, active: true }, (tabs) => {
+    if (/\w+:\/\/www.marktplaats.nl.*/.exec(tabs[0].url))
+      refresh_container.style.opacity = "1";
+  });
 }

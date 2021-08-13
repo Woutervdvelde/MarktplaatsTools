@@ -16,7 +16,7 @@ const removeElementsWithSite = () => {
     document.querySelectorAll(".mp-Listing-seller-link").forEach(e => {
         const listing = e.closest(".mp-Listing");
         if (listing && listing.parentNode)
-            listing.parentNode.removeChild(listing);
+            listing.style.display = "none";
     })
 }
 
@@ -35,5 +35,5 @@ const addDOMObserver = () => {
 }
 
 const addPreviewButton = () => {
-
+    
 }
