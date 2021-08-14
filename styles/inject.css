@@ -18,3 +18,17 @@
 .mt-quick-preview-button:hover {
     background-color: var(--bg-dark);
 }
+
+.mt-quick-preview-content {
+    z-index: 1000000000;
+    width: 750px;
+    height: 90vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -45vh;
+    margin-left: -375px;
+    overflow-y: scroll;
+
+    background-color: var(--bg-dark);
+}
