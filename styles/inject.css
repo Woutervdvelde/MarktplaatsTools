@@ -19,8 +19,15 @@
     background-color: var(--bg-dark);
 }
 
-.mt-quick-preview-content {
+.mt-quick-preview-container {
     z-index: 1000000000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.mt-quick-preview-content {
     width: 750px;
     height: 90vh;
     position: fixed;
@@ -28,7 +35,19 @@
     left: 50%;
     margin-top: -45vh;
     margin-left: -375px;
+    padding: 1rem;
     overflow-y: scroll;
 
     background-color: var(--bg-dark);
+    line-height: .9rem;
+}
+
+.mt-quick-preview-content > .stats,
+.mt-quick-preview-content > h1 {
+    text-align: center;
+}
+
+.mt-quick-preview-content > img {
+    display: flex;
+    margin: 0 auto;
 }
