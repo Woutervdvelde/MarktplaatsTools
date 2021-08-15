@@ -15,7 +15,7 @@ MarktplaatsTools is a chrome extension that adds extra functionality to marktpla
 ## Features
 
  - Option to remove "Bezoek website" advertisements
- - ContextMenu to directly search selected content on Marktplaats
+ - ContextMenu (right click menu) to directly search selected content on Marktplaats
  - Quick preview button that show's the advertisement without leaving the search results
 
 ## Install
