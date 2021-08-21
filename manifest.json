@@ -9,8 +9,8 @@
   "content_scripts": [
     {
       "matches": [
-        "*://www.marktplaats.nl/q/*",
-        "*://marktplaats.nl/q/*"
+        "*://www.marktplaats.nl/*/*",
+        "*://marktplaats.nl/*/*"
       ],
       "css": [
         "styles/inject.css"

@@ -7,6 +7,7 @@ chrome.storage.sync.get((values) => {
 
 const initialize = () => {
     addDOMObserver();
+    DOMchanged();
 }
 
 const DOMchanged = () => {
